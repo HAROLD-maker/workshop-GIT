@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop-GIT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Workshop-GIT</h1>
@@ -11,7 +12,7 @@
     <h2>¿Qué es un control de versiones?</h2>
     <p>se encarga del registro de los cambios realizados a lo largo del tiempo en uno o un conjunto de archivos (versiones), de forma tal que estos puedan ser recuperados con precisión de acuerdo a las necesidades de los usuarios. A este tipo de procesos se le puede denominar versionamiento y si bien este tipo de actividades son comunes en archivos o código fuente en la industria del desarrollo de software, este es un proceso aplicable a cualquier tipo de archivo.</p>
 
-    <h2>¿Qué es GIT-PRUEBAAAAAAAAA?</h2>
+    <h2>¿Qué es GIT?</h2>
     <p>Git es un sistema de control de versiones que nació en el año 2005 producto de las necesidades que afrontaba la comunidad del kernel de Linux de encontrar un mecanismo que les permitiera soportar las actualizaciones y mantenimientos que requería este gran proyecto. Según Git (2021), algunos de los objetivos trazados que debía cumplir este nuevo mecanismo incluían:
         <ul>
             <li>Velocidad</li>
@@ -21,5 +22,44 @@
             <li>Debía ser capaz de manejar eficientemente proyectos de gran envergadura.</li>
         </ul>
     </p>
+
+    <h2>¿Qué es un repositorio?, repositorio locales y remotos.</h2>
+
+    <p>
+        <ul>
+            <li><strong> Repositorio:</strong> Lugar donde se almacenan y gestionan archivos y datos, comúnmente usado en desarrollo de software para rastrear cambios en el código.</li>
+            <li><strong> Repositorio Local:</strong> Versión del repositorio almacenada en la máquina del desarrollador. Permite trabajar de manera independiente y sin conexión.</li>
+            <li><strong> Repositorio Remoto:</strong> Versión del repositorio almacenada en un servidor accesible a través de la red. Facilita la colaboración y sincronización entre múltiples desarrolladores.</li>
+        </ul>
+    </p>
+
+    <h2>¿Qué es GITHUB?</h2>
+    <p>GitHub es una plataforma web que permite a los desarrolladores gestionar y colaborar en proyectos de código utilizando Git. Ofrece repositorios para almacenar y versionar código, herramientas para colaboración como pull requests e issues, y funciones adicionales para documentación y automatización. También facilita la integración con otras herramientas y servicios de desarrollo.</p>
+
+    <h2>¿Qué es una rama en GIT y para qué sirve?</h2>
+    <p>En Git, una rama es una bifurcación del código principal que permite trabajar en paralelo sin afectar el código en la rama principal (como "main" o "master"). Las ramas son útiles para desarrollar nuevas características, corregir errores o probar cambios de manera independiente. Facilitan la colaboración al permitir que varios desarrolladores trabajen en diferentes tareas simultáneamente y se pueden fusionar de nuevo en la rama principal cuando están listas y revisadas.</p>
+
+    <h2>Estados en Git</h2>
+    <div class="state">
+        <h3>Untracked</h3>
+        <p>Archivos nuevos que aún no se han añadido al control de versiones.</p>
+    </div>
+    <div class="state">
+        <h3>Tracked</h3>
+        <p>Archivos que Git está rastreando, con subestados:</p>
+        <ul>
+            <li><strong>Unmodified</strong>: No ha cambiado desde el último commit.</li>
+            <li><strong>Modified</strong>: Ha cambiado pero no se ha añadido al área de preparación.</li>
+            <li><strong>Staged</strong>: Cambios listos para ser confirmados en el próximo commit.</li>
+        </ul>
+    </div>
+    <div class="state">
+        <h3>Committed</h3>
+        <p>Cambios guardados en el repositorio.</p>
+    </div>
+    <div class="state">
+        <h3>Ignored</h3>
+        <p>Archivos que Git no rastrea debido a las reglas en <code>.gitignore</code>.</p>
+    </div>
 </body>
 </html>
