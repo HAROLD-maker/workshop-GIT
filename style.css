@@ -1,3 +1,36 @@
 body{
-    background: linear-gradient(blue, pink);
+    background: linear-gradient(green, blue);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+ul li{
+    color: white;
+}
+
+h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+}
+
+img{
+    width: 40%;
+    border-radius: 10px;
+    height: 50%;
+    overflow: hidden;
+    margin-left: 25%;
 }
